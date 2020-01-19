@@ -1,0 +1,280 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{extarticle} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+% \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+% \fontspec{[FontAwesome.otf]}
+\setmainfont[Path = ./Ubuntu/,  %% Optional; but UPDATE this if 
+                         %% your font files are in a folder
+ Extension = .ttf,
+ UprightFont = *-Regular,
+ BoldFont = *-Bold,
+ ItalicFont = *-Italic,
+ SmallCapsFont = *-Medium]
+{Ubuntu}
+\fontspec{[fontawesome-webfont.ttf]}
+
+\usepackage{color}
+\definecolor{primary}{RGB}{107, 16, 86}
+\definecolor{secondary}{RGB}{0, 0, 0}
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+%\usepackage{fullpage}
+\usepackage{geometry}
+\geometry{a4paper,margin=0.45cm}
+%\geometry{a4paper,left=20mm, top=20mm}
+ %To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+%\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\definecolor{linkcolour}{rgb}{0.3,0.3,0.3} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
+
+\usepackage{tabularx}
+
+\usepackage{textcomp}
+
+\usepackage{fontawesome}
+
+\usepackage{enumitem}
+\setlist[description]{%
+  topsep=10pt,               % space before start / after end of list
+  itemsep=1pt,               % space between items
+%  font={\bfseries\sffamily\color{red}}, % if colour is needed
+}
+
+\def\arraystretch{1}
+\renewcommand{\baselinestretch}{1.178}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{multicols}{3}
+% \par{\centering\normalsize {\textsc{Undergraduate student at Indian Institute of Technology, Kharagpur}}\par}\normalsize
+% \par{\centering\normalsize {\textsc{Department of Computer Science and Engineering}}\par}\normalsize
+%\par{{\begin{center}Dual Degree, \emph{Computer Science and Engineering}\end{center}}}
+\normalsize  \faGlobe\ {\href{https://vaibhav2ghadge.me/}{\  vaibhav2ghadge.me}}\\
+\normalsize \faGithub\ {\href{https://github.com/vaibhav2ghadge}{\  vaibhav2ghadge}}\\
+\normalsize  \faLinkedinSquare\ {\href{https://www.linkedin.com/in/vaibhav2ghadge}{\  vaibhav2ghadge}}\\
+\columnbreak
+\normalsize\par{\centering{\Huge\textsc{\textcolor{primary}{Vaibhav} Ghadge}}\par} % Your name
+\par{\centering\normalsize{\textsc{Pune, India\\}}\hfill\par}
+\columnbreak
+\raggedright\hfill\normalsize \faEnvelope\ {\href{mailto:vaibhav2ghadge@gmail.com}{\  vaibhav2ghadge@gmail.com}}\\
+\raggedright\hfill{\faPhone\ \  +91-9011989591}
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\vspace{-0.7cm}
+\section{\textcolor{primary}{Work Experience}}
+
+\begin{tabularx}{\linewidth}{ l | X }
+
+\textsc{Current} & \textbf{Software Engineer Intern- Agrostar}\hfill\textbf{Pune, India}\\
+\textsc{Jun - Dec 2019}
+& \textbf{Curation Logic}\\
+& {- Worked on curation logic for farmer app that helps farmer to show relevant content of there selected crops and it help to reduce load on customer call center and after launching it to production we get 3x more CTR on app and D0-D7 retention increased by 3\%.
+.}\\
+& {- Curation logic handle 34k concurrent request in peek time try to handle most of  load by redis cache.}\\
+& {- Took ownership of the platform's most used API and refactored it with clean abstraction, error \& added cache for fast response and new feature enhancements.}\\
+
+& \textbf{Ecommerce}\\
+& {- Did pair programming for launching MVC (V1) version of ecommerce did the entire flow of cart with offers.}\\
+& {- After launching ecom we get daily 400-800 orders.}\\
+&{- Refactored and new feature enhancements in the content management service to help localize notification, offers and all orders status so user can browse app in local language.}\\
+&{- \textbf{Technology used :} Golang, Python, Redis, Kafka, Mongodb, Aws}\\
+\multicolumn{2}{c}{} \\
+
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+
+ \section{\textcolor{primary}{Projects}}
+ \vspace{-0.6cm}
+ \begin{tabular}{p{19.7cm}}
+% % \fontsize{9}{12}\selectfont{
+ \begin{description}[style=nextline, font=$\bullet$\hspace{2mm}\normalsize]
+  \item[OPEN Source Contribution:] :\n Contributed under linux foundation (OpenSDS SODA release)
+\newline https://github.com/opensds/opensds/pull/1098
+\newline https://github.com/opensds/opensds/pull/1165
+\newline https://github.com/opensds/opensds/pull/1164
+\item[Sensor Data Handler Through SSE (Pub Sub) :]:
+\boldsymbol{Technology:} Golang, Postgres, Docker, Nginx
+\newline Prof.Damodar Kulkarni,CS Department, Pune University.
+\newline 100 - 1k sensor sending data simultaneously and 10k - 25k end user subscribed to sensor data we are able to send sensor processed data to end user within 10 second through server side event so end user don't need to make connection every time.
+For handling the load we used worker pull model so each request get served in less time and it over come bottleneck of go-routine.
+\item[Message Passing Using Socket Programming:]
+\newline Technology: C (Socket Programming)
+\newline Guide: Prof. Achyut K. Roy,CS Department, Pune University
+\newline Achieved synchronization among nodes in an ad-hoc peer to peer network. Packet handling and Decentralized architecture implemented
+Used UDP protocol for sending packet and implemented routing, delivery protocol
+\item[Toy File System:]
+\newlineA File System is implemented for Find,Search,Delete,Update Data From Hard Drive more efficiently by using Data structure and algorithms
+
+\item[Macro Assembler For IA-32 Architecture:]
+\newline Technology: Python
+\newline Guide: Prof. Nitin Patil, CS Department, Pune University
+\newline Two pass assembler with Specific instructions from Intel Manual like add, delete, move
+
+ \end{description}
+ \end{tabular}
+ 
+ %----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	SKILLS 
+%----------------------------------------------------------------------------------------
+
+\vspace{0.1cm}
+\section{\textcolor{primary}{Technical Skills}}
+
+\begin{tabular}{r|p{15cm}}
+\textsc{Languages} & Golang, Python, C, Javascript\\
+% & \textit{Competent:} C, Golang \\
+\textsc{Libraries / Frameworks} & React, Redux, Flask\\
+\textsc{Databases} & Postgres, MongoDB, Redis\\
+\textsc{Systems / Platforms} & Apache Kafka, Docker, Git, Linux, Vim\\
+%\textsc{Markup / Templating} & HTML, CSS, Sass
+\end{tabular}
+
+
+\vspace{0.1cm}
+\section{\textcolor{primary}{Education}}
+
+\begin{tabular}{r|p{17.5cm}}	
+\textsc{2017-2020} & Bachelors + Masters in \textbf{Computer Science and Mathematics} - Pune University CS Department, Pune\\
+%\hfill\textsc{Cgpa}: 7.59/10.0\\
+% &\textbf{Indian Institute of Technology}, Kharagpur\\
+&Teaching assistant for Database (CS31003) and Functional Programming (CS19001)\\
+%&\textbf{Coursework: }{Programming and Data Structures, Algorithms-I \& II, Software Engineering, Compilers, Switching Circuits, Operating Systems, Computer Networks, Information Retrieval, Database Management Systems, Theory of Computation, Machine Learning, Image Processing, Advanced Graph Theory}
+\end{tabular}
+  \section{\textcolor{primary}{About me}}
+ \vspace{-0.6cm}
+ \begin{tabular}{p{19.7cm}}
+% % \fontsize{9}{12}\selectfont{
+ \begin{description}[style=nextline, font=$\bullet$\hspace{1mm}\normalsize]
+ \item[Hobbies: Competitive Coding, Quora, Computer Games(dota2), Reading Books]
+ \end{description}
+ \end{tabular}
+ 
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	POSITIONS OF RESPONSIBILITY
+%----------------------------------------------------------------------------------------
+
+%\vspace{-0.3cm}
+%\section{Positions of Responsibility}
+
+%\begin{tabular}{r|p{17.5cm}}
+%\textsc{Current} & \textbf{Maintainer}, MetaKGP\\
+%\textsc{Current} & \textbf{Chief Editor}, Technology Literary Society, IIT Kharagpur \\
+%& {- Managing the content and design team of the society.}\\
+%& {- Writer in the English Team, and working as a senior editor for all English publications.}\\
+%\textsc{Apr 2017} & \textbf{Captain}, Team LBS, OpenSoft 2017\\
+%\textsc{Apr 2016} & \textbf{General Secretary}, CodeClub, IIT Kharagpur \\
+%\textsc{Apr 2015} & \textbf{Secretary}, CodeClub, IIT Kharagpur \\
+%& {- Part of the managing team, leading a group of 25 students.}\\
+%& {- Conducted several events, including Microsoft code.fun.do and BITWISE, the Annual Departmental Fest of the Department of Computer Science and Engineering, alongside several fortnightly competitive coding competitions within the campus.}\\
+%& {- Designed the software for updating the leaderboards in real-time during competitions as a part of BITWISE '15.}\\
+%\textsc{Apr 2015} & \textbf{Core Team Member}, Google Students Club, IIT Kharagpur
+%& {- Organized multiple workshops and events, primarily focused on Android Development, in association with Google.}\\
+%& {- Conducted a workshop on the {\href{https://www.polymer-project.org/0.5/}{Polymer Project}}, which received high levels of}\\ & {participation.}\\
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COURSEWORK
+%----------------------------------------------------------------------------------------
+
+% \section{Coursework
+% \hfill\small\textsc{(T)heory and (L)aboratory}}
+
+% \begin{multicols}{2}
+% - Programming and Data Structures (T/L) \\
+% - Discrete Structures \\
+% - Algorithms - II \\
+% - Switching Circuits (T/L) \\
+% - Operating Systems (T/L) \\
+% - Computer Networks (T/L) \\
+% - Machine Learning * \\
+% - Image Processing * \\
+% - Algorithms-I (T/L) \\
+% - Software Engineering (T/L) \\
+% - Formal Languages and Automata Theory \\
+% - Compilers (T/L) \\
+% - Database Management Systems (T/L) \\
+% - Information Retrieval \\
+% - Object Oriented Software Design * \\
+% - Advanced Graph Theory *
+% \end{multicols}
+% {\itshape{Currently Studying:}}\\
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+% \section{Scholastic Achievements}
+
+% %\begin{multicols}{2}
+% - Secured 98.11 percentile in JEE Advanced 2013 \\
+% - Secured 99.33 percentile in JEE Mains 2013 \\ 
+% - Secured AIR 415 in ACM ICPC – Amritapuri online round, 2014
+% %\end{multicols}
+
+%----------------------------------------------------------------------------------------
+
+%\newpage
+%----------------------------------------------------------------------------------------
+
+\end{document}
