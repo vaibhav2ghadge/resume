@@ -118,7 +118,7 @@
 \textsc{Current} & \textbf{Software Engineer Intern- Agrostar}\hfill\textbf{Pune, India}\\
 \textsc{Jun - Dec 2019}
 & \textbf{Curation Logic}\\
-& {- Worked on curation logic for farmer app that helps farmer to show relevant content of there selected crops and it help to reduce load on customer call center and after launching it to production we get 3x more CTR on app and D0-D7 retention increased by 3\%.
+& {- Worked on curation logic for farmer app that helps farmer to show relevant content of there selected crops.Newly developed curation logic help to reduce 22\% load on customer care call center and after launching it to production we get 3x more CTR on new curation logic.it also help us to increase D0-D7 retention by 3\%.
 .}\\
 & {- Curation logic handle 34k concurrent request in peek time try to handle most of  load by redis cache.}\\
 & {- Took ownership of the platform's most used API and refactored it with clean abstraction, error \& added cache for fast response and new feature enhancements.}\\
@@ -149,8 +149,7 @@
 \item[Sensor Data Handler Through SSE (Pub Sub) :]:
 \boldsymbol{Technology:} Golang, Postgres, Docker, Nginx
 \newline Prof.Damodar Kulkarni,CS Department, Pune University.
-\newline 100 - 1k sensor sending data simultaneously and 10k - 25k end user subscribed to sensor data we are able to send sensor processed data to end user within 10 second through server side event so end user don't need to make connection every time.
-For handling the load we used worker pull model so each request get served in less time and it over come bottleneck of go-routine.
+\newline 10k - 20k sensor sending data simultaneously and 10k - 25k end user subscribed to sensor data we are able to send sensor processed data(validation and processing handled by trigger) to end user within 10 second through server side event.For handling the load we used worker pull model so each request get served in less time and it over come bottleneck of go-routine(if we spawn lots of go-routine).
 \item[Message Passing Using Socket Programming:]
 \newline Technology: C (Socket Programming)
 \newline Guide: Prof. Achyut K. Roy,CS Department, Pune University
@@ -178,11 +177,11 @@ Used UDP protocol for sending packet and implemented routing, delivery protocol
 \section{\textcolor{primary}{Technical Skills}}
 
 \begin{tabular}{r|p{15cm}}
-\textsc{Languages} & Golang, Python, C, Javascript\\
+\textsc{Languages} & Golang, Python, Haskell, C, Javascript\\
 % & \textit{Competent:} C, Golang \\
 \textsc{Libraries / Frameworks} & React, Redux, Flask\\
 \textsc{Databases} & Postgres, MongoDB, Redis\\
-\textsc{Systems / Platforms} & Apache Kafka, Docker, Git, Linux, Vim\\
+\textsc{Systems / Platforms} & Rest-Api, Micro-Service, Apache Kafka, Docker, Git, Linux, Vim\\
 %\textsc{Markup / Templating} & HTML, CSS, Sass
 \end{tabular}
 
